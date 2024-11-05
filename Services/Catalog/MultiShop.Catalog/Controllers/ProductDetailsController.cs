@@ -32,21 +32,21 @@ namespace MultiShop.Catalog.Controllers
         public async Task<IActionResult> CreateProductDetail(CreateProductDetailDto createProductDetailDto)
         {
             await _productDetailService.CreateProductDetailAsync(createProductDetailDto);
-            return Ok("Kategori başarıyla eklendi");
+            return Ok("Ürün detayı başarıyla eklendi");
         }
 
         [HttpDelete]
         public async Task<IActionResult> DeleteProductDetail(string id)
         {
             await _productDetailService.DeleteProductDetailAsync(id);
-            return Ok("Kategori başarıyla silindi");
+            return Ok("Ürün detayı başarıyla silindi");
         }
 
         [HttpPut]
         public async Task<IActionResult> UpdateProductDetail(UpdateProductDetailDto updateProductDetailDto)
         {
             await _productDetailService.UpdateProductDetailAsync(updateProductDetailDto);
-            return Ok("Kategori başarıyla güncellendi");
+            return Ok("Ürün detayı başarıyla güncellendi");
         }
     }
 }
