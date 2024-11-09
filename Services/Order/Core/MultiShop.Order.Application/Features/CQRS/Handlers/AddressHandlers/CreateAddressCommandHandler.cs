@@ -23,7 +23,7 @@ namespace MultiShop.Order.Application.Features.CQRS.Handlers.AddressHandlers
                 City = createAddressCommand.City,
                 District = createAddressCommand.District,
                 UserId = createAddressCommand.UserId,
-                Detail1 = createAddressCommand.Detail
+                Detail = createAddressCommand.Detail
 
             });
         }
