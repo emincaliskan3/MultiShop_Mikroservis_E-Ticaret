@@ -14,6 +14,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
     opt.RequireHttpsMetadata = false;
 });
 
+#region
 builder.Services.AddDbContext<CargoContext>();
 builder.Services.AddScoped<ICargoCompanyDal, EfCargoCompanyDal>();
 builder.Services.AddScoped<ICargoCompanyService, CargoCompanyManager>();
@@ -23,7 +24,7 @@ builder.Services.AddScoped<ICargoDetailDal, EfCargoDetailDal>();
 builder.Services.AddScoped<ICargoDetailService, CargoDetailManager>();
 builder.Services.AddScoped<ICargoOperationDal, EfCargoOperationDal>();
 builder.Services.AddScoped<ICargoOperationService, CargoOperationManager>();
-
+#endregion
 // Add services to the container.
 
 builder.Services.AddControllers();
