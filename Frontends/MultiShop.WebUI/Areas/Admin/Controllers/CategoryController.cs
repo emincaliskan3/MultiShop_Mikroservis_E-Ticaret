@@ -17,7 +17,7 @@ namespace MultiShop.WebUI.Areas.Admin.Controllers
         {
             _httpClientFactory = httpClientFactory;
         }
-
+        //Viewbagler ayrı tutulacak
         [Route("Index")]
         public async Task<IActionResult> Index()
         {
